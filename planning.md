@@ -9,9 +9,8 @@ Replace this text with a description of the drawing you want to make. (It would 
 
 ## Decomposition
 
-Again, replace this text with an explanation of how you plan to decompose the project into smaller parts. This should include a list of the functions you think you will write, and how they will fit together. Again, sketches are helpful but not required.
+Again, replace this text with an explanation of how you plan to decompose the project into smaller parts. This should include a list of the functions you think you will write, and how they will fit together. Also describe how you will organize these functions into modules. Again, sketches are helpful but not required.
 
 ## Milestones
 
-- **Milestone 0**: What will be finished when you are 1/3 done with the project?
-- **Milestone 1**: What will be finished when you are 2/3 done with the project?
+- **Milestone 0**: What will be finished when you are halfway done with the project? (When half the work time is used up, we will check in on our milestones and make changes to the project if necessary, to make sure we can finish on time.)
