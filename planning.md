@@ -1,8 +1,12 @@
 # Project plan
 
-## The idea 
+## The idea
 
-Replace this text with a description of the drawing you want to make. (It would be nice to also explain why you want to make this drawing.) It's helpful, but not required, to include a sketch of what you are planning. If you want to add an image, you can do so like this: 
+- i want to draw a character in league of legends
+- maybe a tft character
+- SILVERWING YEA
+- ok maybe katarina
+- ok zed
 
 ![A description of the image, in case the person reading is blind](images/sample.jpg)
 
