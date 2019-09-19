@@ -6,7 +6,7 @@
 - maybe a tft character
 - SILVERWING YEA
 - ok maybe katarina
-- ok zed weeeeeee
+- ok zed weeeeeee ee
 
 ![A description of the image, in case the person reading is blind](images/sample.jpg)
 
