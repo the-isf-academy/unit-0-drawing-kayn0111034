@@ -14,7 +14,7 @@ Below is a sketch of my design
 
 ## Composition
 This would be split into 5 parts
-
+Use fill
 ### Draw_Headphones( )
 The original inspiration for this was cool looking headphones and therefore i named it that.
 
