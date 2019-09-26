@@ -10,41 +10,42 @@ def setup(x, y):
     pendown()
     setheading(0)
 
-def inner_draw_headphones(mirrored):
+def inner_draw_headphones(direction): #mirrored
     setup(-100,-100)
     left(90)
 
     forward(30)
-    left(51.34019175)
-    #left(-1*51.34019175)
+    left(direction*51.34019175)
     forward(36.06)#64.03
-    right(80)
+    right(direction*80)
     forward(44.72) #44.72 not understand
-    right(60)
+    right(direction*60)
     forward(90)
-def mirrored_inner_headphones():
-    right(60)
+"""
+def mirrored_inner_headphones(direction):
+    right(direction*60)
     forward(44.72)
-    right(80)
+    right(direction*80)
     forward(36.06)
-    left(52)
+    left(direction*52)
     forward(30)
-
+"""
 #outer_headphones
-def outer_headphones():
-    left(130)
+def outer_headphones(direction):
+    left(direction*130)
     forward(70)
-    left(85)
+    left(direction*85)
     forward(80)
-    left(53)
+    left(direction*53)
     forward(90)
 #mirrored
+"""
 def mirrored_outer_headphones():
     left(53)
     forward(80)
     left(85)
     forward(70)
-
+"""
 #small Draw_Headphones left
 def small_left_draw_headphones():
     setup(-103,-95)
@@ -136,16 +137,18 @@ def draw_outer_hair():
 
 if __name__ == '__main__':
     speed(0)
-    inner_draw_headphones()
-    mirrored_inner_headphones()
-    outer_headphones()
-    mirrored_outer_headphones()
-    small_left_draw_headphones()
-    small_right_draw_headphones()
-    draw_big_mask()
-    mini_mask()
-    draw_main_hair()
-    draw_outer_hair()
+    setup(-100,-100)
+    inner_draw_headphones(1)
+    #mirrored_inner_headphones(1)
+    inner_draw_headphones(-1)
+    #outer_headphones()
+    #mirrored_outer_headphones()
+    #small_left_draw_headphones()
+#    small_right_draw_headphones()
+#    draw_big_mask()
+    #mini_mask()
+#    draw_main_hair()
+#    draw_outer_hair()
 
 
 input("Press enter to continue...")
