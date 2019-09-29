@@ -38,24 +38,8 @@ def small_draw_headphones(direction):
     forward(20)
     left(direction*165)
     forward(35)
-    left(direction*95)
-    forward(65)
-
-#small Draw_Headphones right
-def small_right_draw_headphones():
-    setup(-15,-95)
-    left(90)
-
-    forward(25)
-    right(51.34019175)
-    forward(39.6)
-    left(80)
-    forward(20)
-    right(165)
-    forward(31)
-    right(90)
-    forward(65)
-
+    left(direction*91)
+    forward(60)
 
 #Draw_mask
 def draw_big_mask_top(direction):
@@ -65,13 +49,13 @@ def draw_big_mask_top(direction):
     right(direction*110)
     forward(32)
     left(direction*70)
-    forward(16)
+    forward(13)
 
 def draw_big_mask_bottom(direction):
 
     forward(5)
     right(direction*130)
-    forward(53)
+    forward(51)
 
 #mini_mask
 def mini_mask_top(direction):
@@ -80,7 +64,7 @@ def mini_mask_top(direction):
     right(direction*110)
     forward(30)
     left(direction*70)
-    forward(10)
+    forward(8)
 
 
 def mini_mask_bottom(direction):
@@ -98,8 +82,8 @@ def mini_mask_bottom(direction):
     forward(45)
     """
 
-    right(53)
-    forward(45)
+    right(51)
+    forward(43)
     #right(75)
     #forward(45)
 #Draw_hair
@@ -108,14 +92,20 @@ def draw_main_hair1():
         forward(1)
         right(0.8)
 def draw_main_hair2():
-    for hair in range (45):
+    for hair in range (35):
         forward(1.5)
         right(0.85)
 #use loop instead of circle
 #outerhair
-def draw_outer_hair():
-    setup(-70,-7)
-
+def draw_outer_hair1():
+    for tophair in range(40):
+        forward(1)
+        right(1.5)
+    setup(-3,-35)
+    right(60)
+    for righthair in range(130):
+        forward(0.15)
+        right(0.5)
 def draw_outer_eye():
     for eye in range(20):
         forward(2)
@@ -123,16 +113,22 @@ def draw_outer_eye():
     left(40)
     backward(20)
     right(180)
-    for eyes in range(85):
+    for eyes in range(120):
         forward(0.2)
         right(0.6)
+def draw_inner_eye():
+    for sharingan in range(750):
+        forward(0.04)
+        right(0.5)
+
+
 
 if __name__ == '__main__':
     speed(0)
 
     setup(-100,-100)
     left(90)
-    fillcolor('blue')
+    fillcolor('dim grey')
     begin_fill()
     inner_draw_headphones(1)
     #mirrored_inner_headphones(1)
@@ -150,49 +146,55 @@ if __name__ == '__main__':
     outer_headphones(-1)
     end_fill()
     #mirrored_outer_headphones()
-    setup(-103,-97)
+    setup(-103,-95)
     left(90)
-    fillcolor('red')
+    fillcolor('steel blue')
     begin_fill()
     small_draw_headphones(1)
-    end_fill()
+
 #    small_right_draw_headphones()
-    setup(-20,-97)
+    setup(-20,-95)
     left(90)
     small_draw_headphones(-1)
+    end_fill()
+
+    fillcolor('dark green')
 
     setup(-100,-100)
     left(90)
+    begin_fill()
     draw_big_mask_top(1)
 
     setup(-24,-100)
     left(90)
     draw_big_mask_top(-1)
 
-    setup(-103,-97)
+    setup(-100,-97)
     left(90)
     draw_big_mask_bottom(1)
 
     setup(-24,-97)
     left(90)
     draw_big_mask_bottom(-1)
-
-    setup(-95,-95)
+    end_fill()
+    setup(-95,-92)
     left(90)
+    fillcolor('sea green')
+    begin_fill()
     mini_mask_top(1)
 
-    setup(-29,-93)
+    setup(-29,-92)
     left(90)
     mini_mask_top(-1)
 
     setup(-28,-93)
-    right(90)
+    right(95)
     mini_mask_bottom(1)
 
-    setup(-95,-95)
+    setup(-95,-93)
     left(15)
     mini_mask_bottom(-1)
-
+    end_fill()
     setup(-115,-25)
     draw_main_hair1()
 
@@ -202,7 +204,18 @@ if __name__ == '__main__':
     left(65)
     draw_main_hair2()
 
-    setup(-105,-40)
-    draw_outer_eye()
+    fillcolor('dodger blue')
 
-input("Press enter to continue...")
+    setup(-105,-40)
+    begin_fill()
+    draw_outer_eye()
+    end_fill()
+
+    setup(-86,-43)
+    fillcolor('black')
+    begin_fill()
+    draw_inner_eye()
+    end_fill()
+
+    setup(-40,-7)
+    draw_outer_hair1()

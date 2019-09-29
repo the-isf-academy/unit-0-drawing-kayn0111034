@@ -1,154 +1,104 @@
 # Drawing project
 # Author: Wesley Chui
 
-from turtle import *
-
-def setup(x, y):
-    "Sets up the turtle, ready to draw, at the given coordinates"
-    penup()
-    goto(x, y)
-    pendown()
-    setheading(0)
-
-def inner_draw_headphones(direction): #mirrored
-    setup(-100,-100)
-    left(90)
-
-    forward(30)
-    left(direction*51.34019175)
-    forward(36.06)#64.03
-    right(direction*80)
-    forward(44.72) #44.72 not understand
-    right(direction*60)
-    forward(90)
-"""
-def mirrored_inner_headphones(direction):
-    right(direction*60)
-    forward(44.72)
-    right(direction*80)
-    forward(36.06)
-    left(direction*52)
-    forward(30)
-"""
-#outer_headphones
-def outer_headphones(direction):
-    left(direction*130)
-    forward(70)
-    left(direction*85)
-    forward(80)
-    left(direction*53)
-    forward(90)
-#mirrored
-"""
-def mirrored_outer_headphones():
-    left(53)
-    forward(80)
-    left(85)
-    forward(70)
-"""
-#small Draw_Headphones left
-def small_left_draw_headphones():
-    setup(-103,-95)
-    left(90)
-
-    forward(25)
-    left(51.34019175)
-    forward(39.6)
-    right(80)
-    forward(20)
-    left(165)
-    forward(35)
-    left(95)
-    forward(65)
-
-#small Draw_Headphones right
-def small_right_draw_headphones():
-    setup(-15,-95)
-    left(90)
-
-    forward(25)
-    right(51.34019175)
-    forward(39.6)
-    left(80)
-    forward(20)
-    right(165)
-    forward(31)
-    right(90)
-    forward(65)
-
-
-#Draw_mask
-def draw_big_mask():
-    setup(-100,-100)
-    left(90)
-
-    forward(25)
-    right(110)
-    forward(32)
-    left(70)
-    forward(16)
-    right(105)
-    forward(14)
-    left(75)
-    forward(32)
-
-    setup(-100,-100)
-    left(90)
-
-    forward(5)
-    right(130)
-    forward(53)
-    left(85)
-    forward(57)
-
-#mini_mask
-def mini_mask():
-    setup(-95,-95)
-    left(90)
-
-    forward(12)
-    right(110)
-    forward(30)
-    left(70)
-    forward(10)
-    right(105)
-    forward(8)
-    left(74.5)
-    forward(32)
-
-    right(110)
-    forward(10)
-    right(50)
-    forward(43)
-    right(75)
-    forward(45)
-
-#Draw_hair
-def draw_main_hair():
-    setup(-115,-25)
-    circle(-70,55)
-
-#outerhair
-def draw_outer_hair():
-    setup(-70,-7)
-
-
-
+from  Testingproject import *
 
 if __name__ == '__main__':
     speed(0)
+
     setup(-100,-100)
+    left(90)
+    fillcolor('dim grey')
+    begin_fill()
     inner_draw_headphones(1)
     #mirrored_inner_headphones(1)
+    setup(-24,-100)
+    left(90)
+
     inner_draw_headphones(-1)
-    #outer_headphones()
+
+    setup(-24,-100)
+    right(90)
+    outer_headphones(1)
+
+    setup(-100,-100)
+    right(90)
+    outer_headphones(-1)
+    end_fill()
     #mirrored_outer_headphones()
-    #small_left_draw_headphones()
+    setup(-103,-95)
+    left(90)
+    fillcolor('steel blue')
+    begin_fill()
+    small_draw_headphones(1)
+
 #    small_right_draw_headphones()
-#    draw_big_mask()
-    #mini_mask()
-#    draw_main_hair()
-#    draw_outer_hair()
+    setup(-20,-95)
+    left(90)
+    small_draw_headphones(-1)
+    end_fill()
+
+    fillcolor('dark green')
+
+    setup(-100,-100)
+    left(90)
+    begin_fill()
+    draw_big_mask_top(1)
+
+    setup(-24,-100)
+    left(90)
+    draw_big_mask_top(-1)
+
+    setup(-100,-97)
+    left(90)
+    draw_big_mask_bottom(1)
+
+    setup(-24,-97)
+    left(90)
+    draw_big_mask_bottom(-1)
+    end_fill()
+    setup(-95,-92)
+    left(90)
+    fillcolor('sea green')
+    begin_fill()
+    mini_mask_top(1)
+
+    setup(-29,-92)
+    left(90)
+    mini_mask_top(-1)
+
+    setup(-28,-93)
+    right(95)
+    mini_mask_bottom(1)
+
+    setup(-95,-93)
+    left(15)
+    mini_mask_bottom(-1)
+    end_fill()
+    setup(-115,-25)
+    draw_main_hair1()
+
+    right(35)
+    backward(10)
+
+    left(65)
+    draw_main_hair2()
+
+    fillcolor('dodger blue')
+
+    setup(-105,-40)
+    begin_fill()
+    draw_outer_eye()
+    end_fill()
+
+    setup(-86,-43)
+    fillcolor('black')
+    begin_fill()
+    draw_inner_eye()
+    end_fill()
+
+    setup(-40,-7)
+    draw_outer_hair1()
 
 
 input("Press enter to continue...")
