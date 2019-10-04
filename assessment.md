@@ -15,18 +15,21 @@ An example of a detail that took a long time to get right, is the angles needed 
 Another example is the use of the setup function for the code. My code uses the same function twice to mirror the pattern, and it needs a lot of use from the 'setup' function. It moves by the pixel, so when I mirror my functions, I need to test a lot for the x and y coordinates for the function to be able to mirror my previous function.
 
 ### [A.iv] Decomposition and abstraction
-**My achieves level project ---- expectations on this category. Here's why.**
+**My achieves level project 5 expectations on this category. Here's why.**
+My image had a lot of different parts and steps I needed to accomplish to create this picture. I decomposed my program a lot, to get to the level of simplicity I have written. Originally, I had just written my code without any functions. Then, I cut my code in half so I could use a function to create the second half that is mirrored on my python drawing by using the 1 & -1 arguments on my variable, which creates a mirror image.
 
+Each function has a clearly named variable, which in turn helps the programmer understand what the function does without actually running it. An example of this is the 'mini_mask_top' & 'mini_mask_bottom', which is the small mask inside the 'draw_big_mask_top' & 'draw_big_mask_bottom', so each functions could be understood on its own.
 ## [B] Planning and development
-
 ## [B.i] The proposal
-**My project achieves level ---- expectations on this category. Here's why.**
-
+**My project achieves level 5 expectations on this category. Here's why.**
+My proposal talks about what my code actually does and it explains the what functions are needed, and how it is to be used.
 ## [B.ii] Plans, milestones, and timelines
-**My project achieves level ---- expectations on this category. Here's why.**
+**My project achieves level 7 expectations on this category. Here's why.**
+I used my milestone effectively by finishing what I planned in the halfway milestone before the half way mark. This shows that I checked what I needed to do and did what I wrote in there, accomplishing my milestone.
 
+What I actually accomplished is similar to my scenario 1 timeline, so it shows that I follow both my timeline and my milestone effectively.
 ## [B.iii] Documentation
-**My project achieves level ---- expectations on this category. Here's why.**
-
+**My project achieves level 7 expectations on this category. Here's why.**
+My program has 7 commit messages on GitHub, explaining what I did and why I did it. It shows how I grew as a computer scientist, as in the first few commits, I did not make or use any functions aside from the 'setup' function I brought into the program from previous programs. Slowly, I added more and more functions, and I learned to decompose my program bit by bit and made 1 file to store my function definitions and import that to my project.py, where I actually run my functions.
 ## [B.iv] Personally meaningful project
-**My project achieves level ---- expectations on this category. Here's why.**
+**My project achieves level 8 expectations on this category. Here's why.**
